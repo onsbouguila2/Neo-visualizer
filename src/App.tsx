@@ -1,15 +1,17 @@
+import Chart from "./components/NasaDataChart";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
-import './App.css'
-
-function App() {
-
+const App = () => {
   return (
-    <>
-     <h1 className="text-3xl font-bold underline">
-    Neo Visualizer!
-  </h1>
-    </>
-  )
-}
+    <div className="app-container">
+      <Header />
+      <main className="content">
+        <Chart/>
+      </main>
+      <Footer />
+    </div>
+  );
+};
 
-export default App
+export default App;
