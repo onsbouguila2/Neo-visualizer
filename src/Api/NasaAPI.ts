@@ -6,10 +6,12 @@ export const fetchAsteroids = async (): Promise<AsteroidData[]> => {
   try {
     const response = await axios.get('http://api.nasa.gov/neo/rest/v1/neo/browse?page=0&size=20&api_key=DEMO_KEY');
     return response.data.near_earth_objects.map((asteroid: any) => {
+      console.log("asteroid", asteroid);
       return {
         name: asteroid.name,
-        estimated_diameter_min: asteroid.estimated_diameter.kilometers.estimated_diameter_min,
-        estimated_diameter_max: asteroid.estimated_diameter.kilometers.estimated_diameter_max,
+        estimated_diameter_min: asteroid?.estimated_diameter?.kilometers?.estimated_diameter_min,
+        estimated_diameter_max: asteroid?.estimated_diameter?.kilometers?.estimated_diameter_max,
+        orbiting_body: asteroid?.close_approach_data[0]?.orbiting_body, 
       };
     });
   } catch (error) {
