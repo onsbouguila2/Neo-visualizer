@@ -19,3 +19,17 @@ Built with **React.js, TypeScript, Tailwind CSS**, and NASA's API data.
 
 ## 🚀 Installation & Setup  
 
+Follow these steps to set up the project locally:  
+
+1️⃣ **Clone the repository**  
+```sh
+git clone https://github.com/onsbouguila2/Neo-visualizer.git  
+cd Neo-visualizer  
+
+2️⃣ Install dependencies
+npm install
+
+3️⃣ Run the application
+npm run dev
+
+
