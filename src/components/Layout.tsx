@@ -86,13 +86,13 @@ const Layout: React.FC = () => {
         </select>
     
         <button
-          className={`tab-button px-5 py-2 rounded-lg cursor-pointer ${activeTab === 'chart' ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
+          className={`tab-button px-5 py-2 rounded-lg cursor-pointer ${activeTab === 'chart' ? 'bg-blue-900 text-white' : 'bg-gray-200'}`}
           onClick={() => handleTabChange('chart')}
         >
           Chart
         </button>
         <button
-          className={`tab-button px-5 py-2 rounded-lg cursor-pointer ${activeTab === 'table' ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
+          className={`tab-button px-5 py-2 rounded-lg cursor-pointer ${activeTab === 'table' ? 'bg-blue-900 text-white' : 'bg-gray-200'}`}
           onClick={() => handleTabChange('table')}
         >
           Table
